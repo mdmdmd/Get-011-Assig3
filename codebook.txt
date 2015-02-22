@@ -1,3 +1,10 @@
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+
 Field: Subject
 Data Type: Integer
 Description: Value represents a subject that the experiment was performed on.  Each value is a new target
@@ -6,260 +13,89 @@ Field: Activity
 Data Type: Character
 Description: Value describes the Activites that were performed at the time of the experiment.
 
-
 Field: tBodyAcc-mean()-X
-
-
 Field: tBodyAcc-mean()-Y
-
-
 Field: tBodyAcc-mean()-Z
-
-
 Field: tBodyAcc-std()-X
-
-
 Field: tBodyAcc-std()-Y
-
-
 Field: tBodyAcc-std()-Z
-
-
 Field: tGravityAcc-mean()-X
-
-
 Field: tGravityAcc-mean()-Y
-
-
 Field: tGravityAcc-mean()-Z
-
-
 Field: tGravityAcc-std()-X
-
-
 Field: tGravityAcc-std()-Y
-
-
 Field: tGravityAcc-std()-Z
-
-
 Field: tBodyAccJerk-mean()-X
-
-
 Field: tBodyAccJerk-mean()-Y
-
-
 Field: tBodyAccJerk-mean()-Z
-
-
 Field: tBodyAccJerk-std()-X
-
-
 Field: tBodyAccJerk-std()-Y
-
-
 Field: tBodyAccJerk-std()-Z
-
-
 Field: tBodyGyro-mean()-X
-
-
 Field: tBodyGyro-mean()-Y
-
-
 Field: tBodyGyro-mean()-Z
-
-
 Field: tBodyGyro-std()-X
-
-
 Field: tBodyGyro-std()-Y
-
-
 Field: tBodyGyro-std()-Z
-
-
 Field: tBodyGyroJerk-mean()-X
-
-
 Field: tBodyGyroJerk-mean()-Y
-
-
 Field: tBodyGyroJerk-mean()-Z
-
-
 Field: tBodyGyroJerk-std()-X
-
-
 Field: tBodyGyroJerk-std()-Y
-
-
 Field: tBodyGyroJerk-std()-Z
-
-
 Field: tBodyAccMag-mean()
-
-
 Field: tBodyAccMag-std()
-
-
 Field: tGravityAccMag-mean()
-
-
 Field: tGravityAccMag-std()
-
-
 Field: tBodyAccJerkMag-mean()
-
-
 Field: tBodyAccJerkMag-std()
-
-
 Field: tBodyGyroMag-mean()
-
-
 Field: tBodyGyroMag-std()
-
-
 Field: tBodyGyroJerkMag-mean()
-
-
 Field: tBodyGyroJerkMag-std()
-
-
 Field: fBodyAcc-mean()-X
-
-
 Field: fBodyAcc-mean()-Y
-
-
 Field: fBodyAcc-mean()-Z
-
-
 Field: fBodyAcc-std()-X
-
-
 Field: fBodyAcc-std()-Y
-
-
 Field: fBodyAcc-std()-Z
-
-
 Field: fBodyAcc-meanFreq()-X
-
-
 Field: fBodyAcc-meanFreq()-Y
-
-
 Field: fBodyAcc-meanFreq()-Z
-
-
 Field: fBodyAccJerk-mean()-X
-
-
 Field: fBodyAccJerk-mean()-Y
-
-
 Field: fBodyAccJerk-mean()-Z
-
-
 Field: fBodyAccJerk-std()-X
-
-
 Field: fBodyAccJerk-std()-Y
-
-
 Field: fBodyAccJerk-std()-Z
-
-
 Field: fBodyAccJerk-meanFreq()-X
-
-
 Field: fBodyAccJerk-meanFreq()-Y
-
-
 Field: fBodyAccJerk-meanFreq()-Z
-
-
 Field: fBodyGyro-mean()-X
-
-
 Field: fBodyGyro-mean()-Y
-
-
 Field: fBodyGyro-mean()-Z
-
-
 Field: fBodyGyro-std()-X
-
-
 Field: fBodyGyro-std()-Y
-
-
 Field: fBodyGyro-std()-Z
-
-
 Field: fBodyGyro-meanFreq()-X
-
-
 Field: fBodyGyro-meanFreq()-Y
-
-
 Field: fBodyGyro-meanFreq()-Z
-
-
 Field: fBodyAccMag-mean()
-
-
 Field: fBodyAccMag-std()
-
-
 Field: fBodyAccMag-meanFreq()
-
-
 Field: fBodyBodyAccJerkMag-mean()
-
-
 Field: fBodyBodyAccJerkMag-std()
-
-
 Field: fBodyBodyAccJerkMag-meanFreq()
-
-
 Field: fBodyBodyGyroMag-mean()
-
-
 Field: fBodyBodyGyroMag-std()
-
-
 Field: fBodyBodyGyroMag-meanFreq()
-
-
 Field: fBodyBodyGyroJerkMag-mean()
-
-
 Field: fBodyBodyGyroJerkMag-std()
-
-
 Field: fBodyBodyGyroJerkMag-meanFreq()
-
-
 Field: angle(tBodyAccMean,gravity)
-
-
 Field: angle(tBodyAccJerkMean),gravityMean)
-
-
 Field: angle(tBodyGyroMean,gravityMean)
-
-
 Field: angle(tBodyGyroJerkMean,gravityMean)
-
-
 Field: angle(X,gravityMean)
-
-
 Field: angle(Y,gravityMean)
-
-
 Field: angle(Z,gravityMean)
