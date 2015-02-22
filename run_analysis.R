@@ -18,7 +18,7 @@ colnames(ycomb) <- "Activity_ID"
 colnames(subcomb) <- "Subject"
 colnames(activity) <- c("Activity_ID","Activity")
 
-meadandstd.data<-cbind(ycomb,xcomb[,grep("mean|std", names(xcomb))])
+meadandstd.data<-cbind(ycomb,xcomb[,grep("mean|std", names(xcomb),ignore.case=TRUE)])
 
 all.data<-cbind(subcomb,merge(activity,meadandstd.data,by="Activity_ID"))
 clean.data<-subset(all.data, select=-c(Activity_ID))
